@@ -1,15 +1,21 @@
 export default function AlbumList (props) {
 
-    const style = {
-        width: "100px",
-        borderRadius: "50%"
+    const imageStyle = {
+        width: "60px",
+        borderRadius: "50%",
+        margin: "20px 10px 0 0"
     };
+
+    const divStyle = {
+        display: "flex",
+        alignItems: "center"
+    }
 
     const {name, coverImg} = props;
 
     return (
-        <div>
-            <img src={coverImg} style={style} alt={name}/>
+        <div style={divStyle}>
+            <img src={coverImg} style={imageStyle} alt={name}/>
             <span>{name}</span>
         </div>
     );

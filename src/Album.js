@@ -13,8 +13,10 @@ export default function Album () {
                 { tracks.map( (track) => (
                     <>
                         <li key={track}>
-                            <span style={{fontSize: "22px"}}>{track}</span>
-                            <img src={play} style={{width: "16px", marginLeft: "5px"}} alt="play"/>
+                            <div style={{display:"flex", alignItems:"center"}}>
+                                <span style={{fontSize: "20px"}}>{track}</span>
+                                <img src={play} style={{width: "20px", marginLeft: "5px"}} alt="play"/>
+                            </div>
                         </li>
                     </>
                     
